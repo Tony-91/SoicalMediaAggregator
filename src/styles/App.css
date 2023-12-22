@@ -1,3 +1,6 @@
+/* App.js file acts as the central hub that orchestrates the layout, navigation, and content structure of
+ Instagram and Twitter aggregator app. It's where you define the overall structure of the
+ application and how different components interact based on the user's navigation choices. */
 .App {
   text-align: center;
 }
@@ -24,9 +27,9 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* .App-link {
+  color: #5dade2;
+} */
 
 @keyframes App-logo-spin {
   from {

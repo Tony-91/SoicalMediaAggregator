@@ -1,51 +1,31 @@
 // src/App.js
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import InstagramFeed from './components/InstagramFeed';
-import TwitterFeed from './components/TwitterFeed';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import InstagramFeed from "./components/InstagramFeed";
+import TwitterFeed from "./components/TwitterFeed";
+// import "./styles/App.css"; // Import the CSS file for styling
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="app-container">
         <Navbar />
-        <Switch>
-          <Route path="/instagram" component={InstagramFeed} />
-          <Route path="/twitter" component={TwitterFeed} />
-          <Route path="/" exact>
-            <h2>Home</h2>
-            <p>Welcome to the Social Media Aggregator App!</p>
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/instagram" element={<InstagramFeed />} />
+          <Route path="/twitter" element={<TwitterFeed />} />
+        </Routes>
       </div>
     </Router>
   );
 }
 
-export default App;
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const Home = () => (
+  <div className="home-container">
+    <h2>Welcome to the Social Media Aggregator App!</h2>
+    <p>Effortlessly view your Instagram and Twitter feeds in one place.</p>
+  </div>
+);
 
 export default App;
