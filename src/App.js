@@ -5,11 +5,8 @@ import Navbar from "./components/Navbar";
 import InstagramFeed from "./components/InstagramFeed";
 import TwitterFeed from "./components/TwitterFeed";
 // import "./styles/App.css"; // Import the CSS file for styling
-<<<<<<< HEAD
 import InstagramEmbed from "./components/InstagramEmbed"; // Adjust the path based on your file structure
 // import "./components/InstagramEm.css";
-=======
->>>>>>> 872bef26e65b9afb2903e5f4daa4193ea31ef973
 
 function App() {
   return (
@@ -18,7 +15,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-<<<<<<< HEAD
 
           <Route
             path="/instagram"
@@ -56,10 +52,6 @@ function App() {
               </>
             }
           />
-=======
-          <Route path="/instagram" element={<InstagramFeed />} />
-          <Route path="/twitter" element={<TwitterFeed />} />
->>>>>>> 872bef26e65b9afb2903e5f4daa4193ea31ef973
         </Routes>
       </div>
     </Router>
