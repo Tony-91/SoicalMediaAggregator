@@ -1,0 +1,16 @@
+/* InstagramEmbed.css */
+.instagram-embed {
+  max-width: 500px; /* Adjust as needed */
+  width: 100%; /* Ensure responsiveness */
+  margin: 0 auto;
+  padding-top: 75%; /* Adjust the aspect ratio (height/width) as needed */
+  position: relative;
+}
+
+.instagram-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
